@@ -416,6 +416,50 @@ body {
     color: #43cec6;
 }
 
+/* =========================Team======================================= */
+.team__title {
+    text-align: center;
+}
+
+.team__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__item {
+    flex: 0 1 33.333%;
+}
+
+.item-team {
+    text-align: center;
+}
+
+.item-team__image {
+    padding: 0 10px;
+}
+
+.team__image {
+    max-width: 100%;
+    height: 350px;
+    padding-bottom: 20px;
+}
+
+.item-team__title {
+    font-family: 'Gabriela', serif;
+    color: #162c5a;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.item-team__text {
+    opacity: 0.9;
+    padding: 20px;
+}
+
+
+
 /* =========================Contacts======================================= */
 
 .contacts__container {
