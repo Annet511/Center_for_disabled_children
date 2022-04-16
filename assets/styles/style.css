@@ -108,7 +108,8 @@ body {
 }
 
 /* MOBILE SMALL */
-@media (max-width: 479.98px) {}
+@media (max-width: 479.98px) {  
+}
 
 /* ============================Header========================================= */
 
@@ -341,6 +342,127 @@ body {
 .bg__container {
     height: 100%;
     display: flex;
+}
+
+
+/* =========================DIRECTIONS=================================== */
+
+
+  .directions_wrapper {
+    position: relative;
+    height: 570px; width: 450px;
+    text-align: center;
+  }
+
+  .directions__center {
+    position: absolute;
+    bottom: 27%;
+    width:250px;
+    height: 290px;
+    background-image:  url(../img/directions/girl.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px, 290px;
+    background-size: contain;
+    background-position: top;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+.directions__text {
+    color:  #162c5a;
+    font-family: 'Gabriela', serif;
+    font-size: 12px;
+    position: relative;
+    top: 225px; 
+}
+  
+  .cards_wrapper {
+    position: absolute;
+    left: calc(50% - 75px);
+    height: 50%;
+    transform-origin: 50% 85%;
+  }
+
+  .cards_wrapper:nth-child(1) { transform: rotate(36deg); }
+  .cards_wrapper:nth-child(2) { transform: rotate(72deg); }
+  .cards_wrapper:nth-child(3) { transform: rotate(108deg); }
+  .cards_wrapper:nth-child(4) { transform: rotate(144deg); }
+  .cards_wrapper:nth-child(5) { transform: rotate(180deg); }
+  .cards_wrapper:nth-child(6) { transform: rotate(216deg); }
+  .cards_wrapper:nth-child(7) { transform: rotate(252deg); }
+  .cards_wrapper:nth-child(8) { transform: rotate(288deg); }
+  .cards_wrapper:nth-child(9) { transform: rotate(324deg); }
+  .cards_wrapper:nth-child(10) { transform: rotate(360deg); }
+  
+  .card {
+    position: relative;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 120px; width: 140px;
+    transform-origin: 50% 10px;
+  }
+
+  .directions__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .cards_wrapper:nth-child(1) .card { transform: rotate(-36deg); }
+  .cards_wrapper:nth-child(2) .card { transform: rotate(-72deg); }
+  .cards_wrapper:nth-child(3) .card { transform: rotate(-108deg); }
+  .cards_wrapper:nth-child(4) .card { transform: rotate(-144deg); }
+  .cards_wrapper:nth-child(5) .card { transform: rotate(-180deg); }
+  .cards_wrapper:nth-child(6) .card { transform: rotate(-216deg); }
+  .cards_wrapper:nth-child(7) .card { transform: rotate(-252deg); }
+  .cards_wrapper:nth-child(8) .card { transform: rotate(-288deg); }
+  .cards_wrapper:nth-child(9) .card { transform: rotate(-324deg); }
+  .cards_wrapper:nth-child(10) .card { transform: rotate(-360deg); }
+  
+  .card_img {
+    width: 60px; height: 60px;
+    margin-bottom: 5px;
+  }
+  
+/* MOBILE SMALL */
+@media (max-width: 479.98px) { 
+    .card_img {
+        width: 40px; height: 40px;
+      }
+
+    .directions__center {
+        bottom: 40%; 
+        width:135px;
+        height: 143px;
+        background-size: 150px, 190px;
+      }
+
+    .card {
+        height: 50px; width: 50px;
+        transform-origin: 50% 10px;
+      } 
+      
+    .cards_wrapper {
+        left: calc(50% - 27px);
+        height: 25%;
+        transform-origin: 50% 170%; 
+        font-size: 9px;
+        line-height: 10px;
+      }  
+
+    .directions__text {
+        font-size: 9px;
+        position: relative;
+        top: 135px;
+        line-height: 12px;
+    }
+
+    .directions_wrapper {
+        height: 330px; 
+      }
 }
 
 /* =========================News======================================= */
