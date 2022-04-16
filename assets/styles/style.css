@@ -334,13 +334,52 @@ body {
 /* =========================bg=================================== */
 
 .bg {
-    height: 80vh;
-    background-color: #a1a1a1;
+    height: 100vh;
+    background-image: url(../img/family-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 800px;
 }
+
+.bg:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(22, 44, 90, 0.3); */
+    /* background-color: rgba(22, 44, 90, 0.2); */
+    background-color: rgba(67, 206, 198, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 
 .bg__container {
     height: 100%;
     display: flex;
+}
+
+.bg__container h1 {
+    width: 55%;
+    margin-top: 200px;
+    margin-bottom: 60px;
+    font-family: 'Gabriela', serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+    color: #f8f8f8;
+    color: #162c5a;
+    text-transform: uppercase;
+    z-index: 20;
+}
+
+.bg__container span {
+    color: #ffd223;
 }
 
 /* =========================News======================================= */
@@ -416,7 +455,78 @@ body {
     color: #43cec6;
 }
 
+/* =========================Video======================================= */
+
+/* .video {}
+
+.video__container {}
+
+.video__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.video__content {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 540px;
+    background-image: url(../img/img-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+} */
+
+#play_btn {
+    /* display: inline-block;
+    width: 71px;
+    height: 71px; */
+    /* background-color: #ffd223; */
+    /* background: url('../img/play_btn.png') no-repeat; */
+    /* margin: 0 auto; */
+    /* z-index: 20; */
+}
+
+/* .video {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin-top: 100px;
+    background: url('../img/video.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.video .video_logo {
+    margin-top: 85px;
+}
+
+.video h3 {
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    font-weight: normal !important;
+    margin: 20px 0 0 0;
+}
+
+.video #play_btn {
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    background: url('../img/play_btn.png') no-repeat;
+    margin-top: 40px;
+} */
+
+
 /* =========================Contacts======================================= */
+
+.contacts {
+    /* margin: -40px 0px; */
+}
 
 .contacts__container {
     display: flex;
