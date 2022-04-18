@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -19,15 +19,8 @@
                 <div class="navbar__wrap">
 
                     <a href="index.html">
-                        <h6 class="header__label" id="logo">Семейный помощник <span>"АВА-мама"</span> </h6>
+                        <img class="header__logo" id="logo" src="assets/img/logo.png" alt="logo">
                     </a>
-                    <div class="hamb">
-                        <div class="hamb__field" id="hamb">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
 
                     <nav class="header__menu menu" id="menu">
                         <ul class="menu__list">
@@ -35,13 +28,13 @@
                                 <a href="#" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">Наши новости</a>
+                                <a href="#" class="menu__link">Новости</a>
                             </li>
                             <li class="menu__item">
-                                <a href="about.html" class="menu__link">Сертификаты</a>
+                                <a href="about.html" class="menu__link">Проекты</a>
                             </li>
                             <li class="menu__item">
-                                <a href="about.html" class="menu__link">Контакты</a>
+                                <a href="#contacts" class="menu__link">Контакты</a>
                             </li>
                             <li class="menu__item">
                                 <a href="#" class="menu__link">O нас</a>
@@ -50,8 +43,16 @@
                     </nav>
 
                     <a href="#">
-                        <div class="header__button">Помочь</div>
+                        <div class="header__button button">Помочь</div>
                     </a>
+
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="popup" id="popup"></div>
@@ -60,8 +61,13 @@
         <main class="main">
             <section class="bg">
                 <div class="bg__container">
-                    <h2>..</h2>
+                    <h1 class="bg__main-title">Центр помощи семьям, воспитывающих детей с инвалидностью и ОВЗ
+                        <span>"АВА-мама"</span></h1>
+                    <a href="#">
+                        <div class="bg__button button">Проекты</div>
+                    </a>
                 </div>
+
             </section>
 
             <section class="news">
@@ -184,54 +190,72 @@
                                     excepturi</p>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+                            <section class="video">
+                                <div class="video__container">
+                                    <h2 class="video__title title">Видео
+                                    </h2>
+                                    <div class="video__content">
+                                        <div id="video">
+                                            <div class="video-control" id="video-play"></div>
+                                            <div class="video-control" id="video-over"></div>
+                                            <video id="myVideo" preload="auto" poster="assets/img/img-video.jpg">
+                                                <source id='mp4'
+                                                    src="assets/video/Видеовыставка_Я рисую с мамой!_mpeg4.mp4"
+                                                    type='video/mp4' />
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 
-            <section class="contacts">
-                <div class="contacts__container">
-                    <div class="contacts__content">
-                        <h2 class="contacts__title title"> Наши контакты</h2>
-                        <h4 class="contacts__subtitle subtitle">Мы некоммерческая организация. Наша цель - оказать
-                            помощь</h4>
-                        <div class="contacts__menu">
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Адрес</h6>
-                                <address class="menu-contacts__address"> г.Сыктывкар, Республика Коми, Россия
-                                </address>
-                            </div>
+                            <section class="contacts">
+                                <section class="contacts" id="contacts">
+                                    <div class="contacts__container">
+                                        <div class="contacts__content">
+                                            <h2 class="contacts__title title"> Наши контакты</h2>
+                                            <h4 class="contacts__subtitle subtitle">Мы некоммерческая организация. Наша
+                                                цель - оказать
+                                                помощь</h4>
+                                            <div class="contacts__menu">
+                                                <div class="contacts__menu menu-contacts">
+                                                    <h6 class="menu-contacts__title">Адрес</h6>
+                                                    <address class="menu-contacts__address"> г.Сыктывкар, Республика
+                                                        Коми, Россия
+                                                    </address>
+                                                </div>
 
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Телефон</h6>
-                                <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
+                                                <div class="contacts__menu menu-contacts">
+                                                    <h6 class="menu-contacts__title">Телефон</h6>
+                                                    <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
 
-                            </div>
+                                                </div>
 
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Телефон</h6>
-                                <a href="support@mail.ru" class="email">support@mail.ru</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__maps">
-                        <div style="position:relative;overflow:hidden;"><a
-                                href="https://yandex.ru/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps"
-                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Сыктывкар</a><a
-                                href="https://yandex.ru/maps/geo/syktyvkar/53149474/?ll=50.781641%2C61.742557&utm_medium=mapframe&utm_source=maps&z=11.03"
-                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Сыктывкар —
-                                Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFAEqOHC" width="560"
-                                height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                                <div class="contacts__menu menu-contacts">
+                                                    <h6 class="menu-contacts__title">Телефон</h6>
+                                                    <a href="support@mail.ru" class="email">support@mail.ru</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="contacts__maps" style="position:relative;overflow:hidden;"><a
+                                                href="https://yandex.ru/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps"
+                                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Сыктывкар</a><a
+                                                href="https://yandex.ru/maps/geo/syktyvkar/53149474/?ll=50.781641%2C61.742557&utm_medium=mapframe&utm_source=maps&z=11.03"
+                                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Сыктывкар
+                                                —
+                                                Яндекс Карты</a><iframe
+                                                src="https://yandex.ru/map-widget/v1/-/CCUFAEqOHC" width="100%"
+                                                height="100%" frameborder="1" allowfullscreen="true"
+                                                style="position:relative;"></iframe>
+                                        </div>
+                                    </div>
+                                </section>
         </main>
 
         <footer class="footer">
             <div class="footer__container">
                 <a href="index.html">
-                    <h6 class="footer__label">Семейный помощник <span>"АВА-мама"</span> </h6>
+                    <img class="footer__logo" id="logo" src="assets/img/logo.png" alt="logo">
                 </a>
 
                 <nav class="footer__menu menu-footer">
@@ -240,10 +264,10 @@
                             <a href="index.html" class="menu-footer__link">Главная</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">Наши новости</a>
+                            <a href="#" class="menu-footer__link">Новости</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">Сертификаты</a>
+                            <a href="#" class="menu-footer__link">Проекты</a>
                         </li>
                         <li class="menu-footer__item">
                             <a href="#" class="menu-footer__link">Контакты</a>
@@ -265,6 +289,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
