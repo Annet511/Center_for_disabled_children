@@ -942,6 +942,15 @@ body {
   object-position: center;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); */
 }
+/* 
+.certificate-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transition: 0.3s ease; */
+/* cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+} */
 
 /* .certificates__button {
   display: inline-block;
