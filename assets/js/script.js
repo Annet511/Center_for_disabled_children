@@ -11,6 +11,7 @@ $(document).ready(function(){
     // autoplaySpeed: 1000,
     draggable:false,
     // rows:2,
-    
   });
 });
+
+
