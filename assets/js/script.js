@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+$(document).ready(function(){
+  $('.certificates-slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 500,
+    dots: true,
+    adaptiveHeight: true,
+    lazyLoad: 'ondemand',
+    // autoplay: true,
+    // autoplaySpeed: 1000,
+    draggable:false,
+    // rows:2,
+  });
+});
+=======
 $(function () {
     var $videoContainer = $('#video'),
         $videoControls = $('.video-control'),
@@ -50,3 +67,4 @@ function closeOnClick() {
     hamb.classList.remove("active");
     body.classList.remove("noscroll");
 }
+>>>>>>> ccd95f925f2479d40dcd19b712d020b3e8ab290f
