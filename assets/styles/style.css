@@ -968,6 +968,15 @@ body {
   }
 }
 
+@media (max-width: 479.98px) {
+  .certificate-item {
+    flex-basis: 45%;
+  }
+  .certificate-item:nth-child(3) {
+    display: none;
+  }
+}
+
 /* =========================Certificates=================================== */
 
 /* =========================Contacts======================================= */
