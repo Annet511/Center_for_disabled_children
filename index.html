@@ -1,453 +1,609 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="assets/styles/Normalize.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/Normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="dist/css/lightbox.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <div Class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <div class="navbar__wrap">
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="navbar__wrap">
+            <a href="index.html">
+              <img
+                class="header__logo"
+                id="logo"
+                src="assets/img/logo.png"
+                alt="logo"
+              />
+            </a>
 
-                    <a href="index.html">
-                        <img class="header__logo" id="logo" src="assets/img/logo.png" alt="logo">
-                    </a>
+            <nav class="header__menu menu" id="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Новости</a>
+                </li>
+                <li class="menu__item">
+                  <a href="about.html" class="menu__link">Проекты</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contacts" class="menu__link">Контакты</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">O нас</a>
+                </li>
+              </ul>
+            </nav>
 
-                    <nav class="header__menu menu" id="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="index.html" class="menu__link">Главная</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Новости</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="about.html" class="menu__link">Проекты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#contacts" class="menu__link">Контакты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">O нас</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <a href="donations.html">
+              <div class="header__button button">Помочь</div>
+            </a>
 
-                    <a href="donations.html">
-                        <div class="header__button button">Помочь</div>
-                    </a>
-
-                    <div class="hamb">
-                        <div class="hamb__field" id="hamb">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
             </div>
-            <div class="popup" id="popup"></div>
-        </header>
+          </div>
+        </div>
+        <div class="popup" id="popup"></div>
+      </header>
 
-        <main class="main">
-            <section class="bg">
-                <div class="bg__container">
-                    <div class="bg__main">
-                        <h1 class="bg__main-title">Центр помощи семьям, воспитывающих детей с инвалидностью и ОВЗ
-                            <span>"АВА-мама"</span></h1>
-                        <a href="#">
-                            <div class="bg__button button">Проекты</div>
-                        </a>
-                    </div>
+      <main class="main">
+        <section class="bg">
+          <div class="bg__container">
+            <div class="bg__main">
+              <h1 class="bg__main-title">
+                Центр помощи семьям, воспитывающих детей с инвалидностью и ОВЗ
+                <span>"АВА-мама"</span>
+              </h1>
+              <a href="#">
+                <div class="bg__button button">Проекты</div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="directions">
+          <div class="directions__container">
+            <h2 class="directions__title title">Направления</h2>
+            <div class="directions__content">
+              <div class="directions__center">
+                <div class="directions__text">
+                  <h4>Мы работаем с детьми по следующим направлениям</h4>
+                </div>
+              </div>
+              <div class="directions_wrapper">
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/hand.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Сенсорная терапия</h4>
+                  </div>
                 </div>
 
-            </section>
-
-            <section class="directions">
-                <div class="directions__container">
-                    <h2 class="directions__title title">Направления</h2>
-                    <div class="directions__content">
-                        <div class="directions__center">
-                            <div class="directions__text">
-                                <h4>Мы работаем с детьми по следующим направлениям</h4>
-                            </div>
-                        </div>
-                        <div class="directions_wrapper">
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/hand.png" alt="icon">
-                                    <h4 class="card_title">Сенсорная терапия</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/sport.png" alt="icon">
-                                    <h4 class="card_title">Домашний тренер</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/head.png" alt="icon">
-                                    <h4 class="card_title">Поведенческая терапия</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/brain.png" alt="icon">
-                                    <h4 class="card_title">Нейропсихолог</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/home.png" alt="icon">
-                                    <h4 class="card_title">Социально-бытовая ориентация</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/voice.png" alt="icon">
-                                    <h4 class="card_title">Логопед</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/music.png" alt="icon">
-                                    <h4 class="card_title">Музыкальная терапия</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/hat.png" alt="icon">
-                                    <h4 class="card_title">Подготовка к школе</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/art.png" alt="icon">
-                                    <h4 class="card_title">Творческие занятия</h4>
-                                </div>
-                            </div>
-
-                            <div class="cards_wrapper">
-                                <div class="card">
-                                    <img class="card_img" src="assets/img/directions/people.png" alt="icon">
-                                    <h4 class="card_title">Коммуникативные навыки</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/sport.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Домашний тренер</h4>
+                  </div>
                 </div>
-            </section>
 
-
-            <section class="news">
-                <div class="news__container">
-                    <h2 class="news__title title">Наши новости</h2>
-                    <h4 class="news__subtitle subtitle">Следите за обновлениями</h4>
-
-                    <div class="news__items">
-                        <div class="news__item item-news">
-                            <div class="item-news__image">
-                                <img src="#" alt="" />
-                            </div>
-                            <h3 class="item-news__title">Новость 1</h3>
-                            <p class="item-news__text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                consectetur placeat inventore laudantium eaque, officia animi
-                                quisquam asperiores debitis aut magnam sequi omnis aspernatur
-                                numquam nihil id corporis repellendus excepturi!
-                            </p>
-                            <div>
-                                <a href="#" class="link">Узнать больше</a>
-                            </div>
-                        </div>
-
-                        <div class="news__item item-news">
-                            <div class="item-news__image">
-                                <img src="#" alt="" />
-                            </div>
-                            <h3 class="item-news__title">Новость 2</h3>
-                            <p class="item-news__text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                consectetur placeat inventore laudantium eaque, officia animi
-                                quisquam asperiores debitis aut magnam sequi omnis aspernatur
-                                numquam nihil id corporis repellendus excepturi!
-                            </p>
-                            <div>
-                                <a href="#" class="link">Узнать больше</a>
-                            </div>
-                        </div>
-
-                        <div class="news__item item-news">
-                            <div class="item-news__image">
-                                <img src="#" alt="" />
-                            </div>
-                            <h4 class="item-news__title">Новость 3</h4>
-                            <p class="item-news__text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                consectetur placeat inventore laudantium eaque, officia animi
-                                quisquam asperiores debitis aut magnam sequi omnis aspernatur
-                                numquam nihil id corporis repellendus excepturi!
-                            </p>
-                            <div>
-                                <a href="#" class="link">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/head.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Поведенческая терапия</h4>
+                  </div>
                 </div>
-            </section>
 
-            <section class="team">
-                <div class="team__container">
-                    <div class="team__content">
-                        <h2 class="team__title title">Наша команда</h2>
-
-                        <div class="team__items">
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Руководитель</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Психолог</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Логопед</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Руководитель</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Психолог</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                            <div class="team__item item-team">
-                                <div class="item-team__image">
-                                    <img class="team__image" src="assets/img/team/logoped.jpg" alt="logoped" />
-                                </div>
-                                <h3 class="item-team__title">Логопед</h3>
-                                <p class="item-team__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                                    consectetur placeat inventore laudantium eaque, officia
-                                    animi quisquam asperiores debitis aut magnam sequi omnis
-                                    aspernatur numquam nihil id corporis repellendus excepturi
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/brain.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Нейропсихолог</h4>
+                  </div>
                 </div>
-            </section>
 
-            <section class="video">
-                <div class="video__container">
-                    <h2 class="video__title title">Видео</h2>
-                    <div class="video__content">
-                        <div id="video">
-                            <div class="video-control" id="video-play"></div>
-                            <div class="video-control" id="video-over"></div>
-                            <video id="myVideo" preload="auto" poster="assets/img/video/img-video.jpg">
-                                <source id="mp4" src="assets/video/video-picture.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/home.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Социально-бытовая ориентация</h4>
+                  </div>
                 </div>
-            </section>
 
-            <section class="certificates">
-                <div class="certificates__container">
-                    <h2 class="title">Наши сертификаты</h2>
-                    <div class="certificates_body">
-                        <a href="assets/img/certificates/certificate-1.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-1.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-2.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-2.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-3.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-3.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-4.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-4.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-5.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-5.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-6.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-6.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-7.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-7.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-8.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-8.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-9.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-9.jpg" alt="certificate" />
-                        </a>
-                        <a href="assets/img/certificates/certificate-10.jpg" class="certificate-item"
-                            data-lightbox="certificate">
-                            <img src="assets/img/certificates/certificate-10.jpg" alt="certificate" />
-                        </a>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/voice.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Логопед</h4>
+                  </div>
                 </div>
-            </section>
 
-            <section class="contacts" id="contacts">
-                <div class="contacts__container">
-                    <div class="contacts__content">
-                        <h2 class="contacts__title title">Наши контакты</h2>
-                        <h4 class="contacts__subtitle subtitle">
-                            Мы некоммерческая организация. Наша цель - оказать помощь
-                        </h4>
-                        <div class="contacts__menu">
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Адрес</h6>
-                                <address class="menu-contacts__address">
-                                    г.Сыктывкар, Республика Коми, Россия
-                                </address>
-                            </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/music.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Музыкальная терапия</h4>
+                  </div>
+                </div>
 
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Телефон</h6>
-                                <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
-                            </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/hat.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Подготовка к школе</h4>
+                  </div>
+                </div>
 
-                            <div class="contacts__menu menu-contacts">
-                                <h6 class="menu-contacts__title">Телефон</h6>
-                                <a href="support@mail.ru" class="email">support@mail.ru</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/art.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Творческие занятия</h4>
+                  </div>
+                </div>
 
-                    <div class="contacts__maps" style="position: relative; overflow: hidden">
-                        <a href="https://yandex.ru/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps" style="
+                <div class="cards_wrapper">
+                  <div class="card">
+                    <img
+                      class="card_img"
+                      src="assets/img/directions/people.png"
+                      alt="icon"
+                    />
+                    <h4 class="card_title">Коммуникативные навыки</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="news__container">
+            <h2 class="news__title title">Наши новости</h2>
+            <h4 class="news__subtitle subtitle">Следите за обновлениями</h4>
+
+            <div class="news__items">
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="#" alt="" />
+                </div>
+                <h3 class="item-news__title">Новость 1</h3>
+                <p class="item-news__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                  consectetur placeat inventore laudantium eaque, officia animi
+                  quisquam asperiores debitis aut magnam sequi omnis aspernatur
+                  numquam nihil id corporis repellendus excepturi!
+                </p>
+                <div>
+                  <a href="#" class="link">Узнать больше</a>
+                </div>
+              </div>
+
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="#" alt="" />
+                </div>
+                <h3 class="item-news__title">Новость 2</h3>
+                <p class="item-news__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                  consectetur placeat inventore laudantium eaque, officia animi
+                  quisquam asperiores debitis aut magnam sequi omnis aspernatur
+                  numquam nihil id corporis repellendus excepturi!
+                </p>
+                <div>
+                  <a href="#" class="link">Узнать больше</a>
+                </div>
+              </div>
+
+              <div class="news__item item-news">
+                <div class="item-news__image">
+                  <img src="#" alt="" />
+                </div>
+                <h4 class="item-news__title">Новость 3</h4>
+                <p class="item-news__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                  consectetur placeat inventore laudantium eaque, officia animi
+                  quisquam asperiores debitis aut magnam sequi omnis aspernatur
+                  numquam nihil id corporis repellendus excepturi!
+                </p>
+                <div>
+                  <a href="#" class="link">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="team">
+          <div class="team__container">
+            <div class="team__content">
+              <h2 class="team__title title">Наша команда</h2>
+
+              <div class="team__items">
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Руководитель</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Психолог</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Логопед</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Руководитель</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Психолог</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+                <div class="team__item item-team">
+                  <div class="item-team__image">
+                    <img
+                      class="team__image"
+                      src="assets/img/team/logoped.jpg"
+                      alt="logoped"
+                    />
+                  </div>
+                  <h3 class="item-team__title">Логопед</h3>
+                  <p class="item-team__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                    consectetur placeat inventore laudantium eaque, officia
+                    animi quisquam asperiores debitis aut magnam sequi omnis
+                    aspernatur numquam nihil id corporis repellendus excepturi
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="video__container">
+            <h2 class="video__title title">Видео</h2>
+            <div class="video__content">
+              <div id="video">
+                <div class="video-control" id="video-play"></div>
+                <div class="video-control" id="video-over"></div>
+                <video
+                  id="myVideo"
+                  preload="auto"
+                  poster="assets/img/video/img-video.jpg"
+                >
+                  <source
+                    id="mp4"
+                    src="assets/video/video-picture.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="certificates">
+          <div class="certificates__container">
+            <h2 class="title">Наши сертификаты</h2>
+            <div class="certificates_body">
+              <a
+                href="assets/img/certificates/certificate-1.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-1.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-2.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-2.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-3.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-3.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-4.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-4.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-5.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-5.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-6.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-6.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-7.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-7.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-8.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-8.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-9.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-9.jpg"
+                  alt="certificate"
+                />
+              </a>
+              <a
+                href="assets/img/certificates/certificate-10.jpg"
+                class="certificate-item"
+                data-lightbox="certificate"
+              >
+                <img
+                  src="assets/img/certificates/certificate-10.jpg"
+                  alt="certificate"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+          <div class="contacts__container">
+            <div class="contacts__content">
+              <h2 class="contacts__title title">Наши контакты</h2>
+              <h4 class="contacts__subtitle subtitle">
+                Мы некоммерческая организация. Наша цель - оказать помощь
+              </h4>
+              <div class="contacts__menu">
+                <div class="contacts__menu menu-contacts">
+                  <h6 class="menu-contacts__title">Адрес</h6>
+                  <address class="menu-contacts__address">
+                    г.Сыктывкар, Республика Коми, Россия
+                  </address>
+                </div>
+
+                <div class="contacts__menu menu-contacts">
+                  <h6 class="menu-contacts__title">Телефон</h6>
+                  <a href="tel:+77000000000" class="tel">+7 700 000 00 00</a>
+                </div>
+
+                <div class="contacts__menu menu-contacts">
+                  <h6 class="menu-contacts__title">Телефон</h6>
+                  <a href="support@mail.ru" class="email">support@mail.ru</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="contacts__maps"
+              style="position: relative; overflow: hidden"
+            >
+              <a
+                href="https://yandex.ru/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps"
+                style="
                   color: #eee;
                   font-size: 12px;
                   position: absolute;
                   top: 0px;
-                ">Сыктывкар</a><a
-                            href="https://yandex.ru/maps/geo/syktyvkar/53149474/?ll=50.781641%2C61.742557&utm_medium=mapframe&utm_source=maps&z=11.03"
-                            style="
+                "
+                >Сыктывкар</a
+              ><a
+                href="https://yandex.ru/maps/geo/syktyvkar/53149474/?ll=50.781641%2C61.742557&utm_medium=mapframe&utm_source=maps&z=11.03"
+                style="
                   color: #eee;
                   font-size: 12px;
                   position: absolute;
                   top: 14px;
-                ">Сыктывкар — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFAEqOHC" width="100%"
-                            height="100%" frameborder="1" allowfullscreen="true" style="position: relative"></iframe>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__container">
-                <a href="index.html">
-                    <img class="footer__logo" src="assets/img/logo.png" alt="logo" />
-                </a>
-
-                <nav class="footer__menu menu-footer">
-                    <ul class="menu-footer__list">
-                        <li class="menu-footer__item">
-                            <a href="index.html" class="menu-footer__link">Главная</a>
-                        </li>
-                        <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">Новости</a>
-                        </li>
-                        <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">Проекты</a>
-                        </li>
-                        <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">Контакты</a>
-                        </li>
-                        <li class="menu-footer__item">
-                            <a href="#" class="menu-footer__link">O нас</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="footer__social social">
-                    <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
-                    <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
-                    <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
-                </div>
-
-                <span class="footer__copyright">Copyright &copy; 2022, All rights reserved.
-                </span>
+                "
+                >Сыктывкар — Яндекс Карты</a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/-/CCUFAEqOHC"
+                width="100%"
+                height="100%"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
             </div>
-        </footer>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="index.html">
+            <img class="footer__logo" src="assets/img/logo.png" alt="logo" />
+          </a>
+
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list">
+              <li class="menu-footer__item">
+                <a href="index.html" class="menu-footer__link">Главная</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Новости</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Проекты</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Контакты</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">O нас</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__social social">
+            <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
+            <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
+            <a href="#" class="social__item"><img src="#" alt="vk" /> </a>
+          </div>
+
+          <span class="footer__copyright"
+            >Copyright &copy; 2022, All rights reserved.
+          </span>
+        </div>
+      </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
-</body>
-
+  </body>
 </html>
