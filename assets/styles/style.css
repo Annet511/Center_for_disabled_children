@@ -44,8 +44,8 @@ body {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 157%;
-    color: #a1a1a1;
+    line-height: 137%;
+    color: #848282;
 }
 
 .wrapper {
@@ -543,6 +543,13 @@ body {
     }
 }
 
+@media (max-width: 360px) {
+    .bg__main-title {
+        width: 300px;
+        font-size: 22px;
+    }
+}
+
 /* =========================DIRECTIONS=================================== */
 
 .directions__container {
@@ -757,10 +764,17 @@ body {
 }
 
 /* =========================News======================================= */
+.news {
+    background-image: url(../img/numbered_services_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .news__container {
-    background-image: url(../img/numbered_services_bg.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .news__title {
@@ -800,34 +814,135 @@ body {
 }
 
 .item-news__image {
-    background-color: #a1a1a1;
+    cursor: pointer;
+    position: relative;
+}
+
+.item-news__image:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(22, 44, 90, 0.3); */
+    /* background-color: rgba(22, 44, 90, 0.2); */
+    /* background-color: rgba(67, 206, 198, 0.4); */
+    background-color: rgba(136, 129, 129, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.50); */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.item-news__image:hover:before {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.item-news__image img {
     width: 100%;
     height: 250px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .item-news__title {
+    display: flex;
+    flex: 1 1 auto;
     font-family: "Gabriela", serif;
     color: #162c5a;
-    font-size: 30px;
-    line-height: 1;
-    letter-spacing: 1px;
+    line-height: 117%;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 30px 0;
 }
 
 .item-news__text {
-    opacity: 0.9;
     padding: 20px;
+    letter-spacing: 1px;
+    /* color: rgba(235, 144, 17, 0.841); */
+    /* color: #d69845; */
+    /* font-weight: 800; */
 }
 
-.link {
-    font-family: "Gabriela", serif;
-    color: #162c5a;
-}
-
-.link:hover {
+.item-news__title:hover {
     color: #43cec6;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.news__button {
+    margin-top: 60px;
+}
+
+/* PC */
+@media (max-width: 1087px) {
+    .item-news__image img {
+        height: 220px;
+    }
+
+    .item-news__title {
+        padding: 20px 20px 0;
+    }
+
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+
+    .news__item {
+        flex: 0 1 50%;
+    }
+
+    .item-news__image img {
+        height: 250px;
+    }
+
+    .item-news:last-child {
+        display: none;
+    }
+
+    .item-news:not(:last-child) {
+        margin: 0;
+    }
+
+    .item-news:first-child {
+        margin: 0 20px 0 0;
+    }
+
+    .news__button {
+        margin-top: 50px;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+
+    .news__item {
+        flex: 0 1 100%;
+        padding: 0;
+    }
+
+    .item-news__image img {
+        height: 320px;
+    }
+
+    .item-news:not(:first-child) {
+        display: none;
+    }
+
+    .item-news:first-child {
+        margin: 0;
+    }
+
+    .news__button {
+        margin-top: 20px;
+    }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 479.98px) {}
 
 /* =========================Team======================================= */
 .team__title {
@@ -1594,7 +1709,7 @@ body {
 
 /* ========================= Page About us======================================= */
 
-.news {
+/* .news {
     margin-top: 90px;
 }
 
@@ -1618,7 +1733,7 @@ body {
 
 .page-news__item {
     flex: 0 1 auto;
-}
+} */
 
 /* .item-news {
     flex-direction: column;
