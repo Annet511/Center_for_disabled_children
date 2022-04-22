@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+/* ================================================================= */
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  color: #a1a1a1;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1176px;
+  margin: 0px auto;
+  padding: 70px 15px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #43cec6;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-family: "Gabriela", serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 127%;
+  color: #162c5a;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #ffd223;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 16px 32px 14px;
+  font-family: nunito, sans-serif;
+  text-transform: uppercase;
+  color: #162c5a;
+}
+
+.button:hover {
+  background-color: #162c5a;
+  color: #f7f7f7;
+  transition: 0.3s;
+}
+
+/* PC */
+@media (max-width: 1087px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+    padding: 60px 15px;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 48px;
+  }
+
+  .subtitle {
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 40px 15px;
+  }
+
+  .button {
+    padding: 14px 20px 13px;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 479.98px) {
+  [class*="__container"] {
+    padding: 30px 15px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .button {
+    padding: 14px 20px 13px;
+  }
+}
