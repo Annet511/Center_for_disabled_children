@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
   $('.certificates-slider').slick({
     infinite: true,
@@ -14,7 +13,6 @@ $(document).ready(function(){
     // rows:2,
   });
 });
-=======
 $(function () {
     var $videoContainer = $('#video'),
         $videoControls = $('.video-control'),
@@ -67,4 +65,16 @@ function closeOnClick() {
     hamb.classList.remove("active");
     body.classList.remove("noscroll");
 }
->>>>>>> ccd95f925f2479d40dcd19b712d020b3e8ab290f
+
+// Плавный переход к якорю
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+    anchor.addEventListener("click", function(event) {
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector(''+ blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+}
