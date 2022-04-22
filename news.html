@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семейный помощник "АВА-мама" г. Сыктывкар</title>
-
     <link rel="stylesheet" href="assets/styles/Normalize.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/donations.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="wrapper">
+    <div Class="wrapper">
         <header class="header">
             <div class="header__container">
                 <div class="navbar__wrap">
-    
+
                     <a href="index.html">
                         <img class="header__logo" id="logo" src="assets/img/logo.png" alt="logo">
                     </a>
-    
+
                     <nav class="header__menu menu" id="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="index.html" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="index.html#news__link" class="menu__link">Новости</a>
+                                <a href="#news__link" class="menu__link">Новости</a>
                             </li>
                             <li class="menu__item">
                                 <a href="about.html" class="menu__link">Проекты</a>
                             </li>
                             <li class="menu__item">
-                                <a href="index.html#contacts__link" class="menu__link">Контакты</a>
+                                <a href="#contacts__link" class="menu__link">Контакты</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link">O нас</a>
+                                <a href="about-us.html" class="menu__link">O нас</a>
                             </li>
                         </ul>
                     </nav>
-    
-                    <a href="#">
+
+                    <a href="donations.html">
                         <div class="header__button button">Пожертвовать</div>
                     </a>
-    
+
                     <div class="hamb">
                         <div class="hamb__field" id="hamb">
                             <span class="bar"></span>
@@ -57,92 +58,79 @@
             </div>
             <div class="popup" id="popup"></div>
         </header>
-        <main>
-            <section>
-                <div class="help__container">
-                    <img  class= "help__map" src="assets/img/photomap.png" alt=""> 
-                    <h3 class="title">Как нам помочь?</h3>
-                    <p class="help__desc">
-                        Вы можете поддержать нас в создании пространства для детей 
-                        с ограниченными возможностями любой комфортной для вас суммой. Нам важны любые пожертвования 🙏
-                    </p>
 
-                    <div class="help__options">
-                        <div class="help__forms">
-                            <div class="help__form">
-                                  <h4 class="help__option-title subtitle">Перевод в кошелек ЮMoney</h4>
-                                  <iframe class= "help__frame" src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%97%D0%90%D0%9F%D0%A3%D0%A1%D0%9A%D0%90%D0%95%D0%9C%20%D0%A1%D0%91%D0%9E%D0%A0%20%D0%9F%D0%9E%D0%96%D0%95%D0%A0%D0%A2%D0%92%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%99%20%D0%9D%D0%90%20%D0%A0%D0%95%D0%9C%D0%9E%D0%9D%D0%A2%20%D0%9F%D0%9E%D0%9C%D0%95%D0%A9%D0%95%D0%9D%D0%98%D0%AF%20%D0%94%D0%9B%D0%AF%20%D0%A1%D0%95%D0%9C%D0%95%D0%99%D0%9D%D0%9E&default-sum=&button-text=11&successURL=&quickpay=shop&account=410014564958065&" width="423" height="278" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        <main class="main">
+            <section class="news" id="news">
+                <div class="news__container">
+                    <a id="news__link"></a>
+                    <h2 class="news__title title">Наши новости</h2>
+                    <h4 class="news__subtitle subtitle">Следите за обновлениями</h4>
+
+                    <div class="news__items">
+                        <div class="news__item item-news page-news__item">
+                            <div class="item-news__image">
+                                <img src="#" alt="" />
                             </div>
-                            <div class="help__form">
-                                <h4 class="help__option-title subtitle">Через приложение Сбербанка</h4>
-                                <div class="help__option-qr">
-                                    <img src="https://sun9-6.userapi.com/s/v1/ig2/5E_itTvt2KGLLkq4eai2VPRyOXykLR7MlJRvsR6qNXB4yzj0xsbN0w3UUIPRGv6hakSvj9WyxNQKvJIeYnT-JwrV.jpg?size=649x609&quality=95&type=album" alt="">
-                                </div>
+                            <h3 class="item-news__title">Новость 1</h3>
+                            <p class="item-news__text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+                                consectetur placeat inventore laudantium eaque, officia animi
+                                quisquam asperiores debitis aut magnam sequi omnis aspernatur
+                                numquam nihil id corporis repellendus excepturi!
+                            </p>
+                            <div>
+                                <a href="#" class="link">Узнать больше</a>
                             </div>
                         </div>
-                        <div class="help__requisites">
-                            <h4 class="help__option-title subtitle">Банковский перевод</h4>
-                            
-                            <ul>
-                                <li>
-                                    <p class="help__requisites-title">Полное наименование юридического лица:</p>
-                                    <p>Автономная некоммерческая организация «ПРОГНОЗКОМИ»</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Краткое наименование юридического лица:
-                                    </p>
-                                    <p>АНО «ПРОГНОЗКОМИ»</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Юридический адрес:
-                                    </p>
-                                    <p>г. Сыктывкар, Тентюковская, 93, 45</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Почтовый адрес:
-                                    </p>
-                                    <p>г. Сыктывкар, Октябрьский проспект, 138, 19</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        ИНН/КПП:
-                                    </p>
-                                    <p>1101167791/110101001</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Расчетный счет:
-                                    </p>
-                                    <p>40703810628000000878 в КОМИ ОТДЕЛЕНИИ №8617 ПАО СБЕРБАНК</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Корреспондентский счет:
-                                    </p>
-                                    <p>30101810400000000640</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        Телефон:
-                                    </p>
-                                    <p>+7 (908) 328-18-58</p>
-                                </li>
-                                <li>
-                                    <p class="help__requisites-title">
-                                        E-mail:
-                                    </p>
-                                    <p>prognozkomi@gmail.com</p>
-                                </li>
-                            </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contacts" id="contacts">
+                <div class="contacts__container">
+                    <div class="contacts__content">
+                        <a id="contacts__link"></a>
+                        <h2 class="contacts__title title">Наши контакты</h2>
+                        <h4 class="contacts__subtitle subtitle">
+                            Мы некоммерческая организация. Наша цель - оказать помощь
+                        </h4>
+                        <div class="contacts__menu">
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Адрес</h6>
+                                <address class="menu-contacts__address">
+                                    г.Сыктывкар, Республика Коми, Россия
+                                </address>
+                            </div>
+
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Телефон</h6>
+                                <a href="tel:+79083281858" class="tel">+7 (908) 328-18-58</a>
+                            </div>
+
+                            <div class="contacts__menu menu-contacts">
+                                <h6 class="menu-contacts__title">Телефон</h6>
+                                <a href="sidnap@mail.ru" class="email">sidnap@mail.ru</a>
+                            </div>
                         </div>
                     </div>
 
-
-                    <h4>Этапы проведения ремонта можно будет посмотреть в нашей группе <a href="https://vk.com/abamama_skt">Вконтакте</a></h4>
-                    <p>Мы очень ценим Ваше участие и дорожим Вашим доверием и поддержкой!</p>
+                    <div class="contacts__maps" style="position: relative; overflow: hidden">
+                        <a href="https://yandex.ru/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps" style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 0px;
+                ">Сыктывкар</a><a
+                            href="https://yandex.ru/maps/geo/syktyvkar/53149474/?ll=50.781641%2C61.742557&utm_medium=mapframe&utm_source=maps&z=11.03"
+                            style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 14px;
+                ">Сыктывкар — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFAEqOHC" width="100%"
+                            height="100%" frameborder="1" allowfullscreen="true" style="position: relative"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
@@ -150,7 +138,7 @@
         <footer class="footer">
             <div class="footer__container">
                 <a href="index.html">
-                    <img class="footer__logo" src="assets/img/logo.png" alt="logo">
+                    <img class="footer__logo" src="assets/img/logo.png" alt="logo" />
                 </a>
 
                 <nav class="footer__menu menu-footer">
@@ -159,13 +147,13 @@
                             <a href="index.html" class="menu-footer__link">Главная</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="index.html#news__link" class="menu-footer__link">Новости</a>
+                            <a href="#news" class="menu-footer__link">Новости</a>
                         </li>
                         <li class="menu-footer__item">
                             <a href="#" class="menu-footer__link">Проекты</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="index.html#contacts__link" class="menu-footer__link">Контакты</a>
+                            <a href="#contacts" class="menu-footer__link">Контакты</a>
                         </li>
                         <li class="menu-footer__item">
                             <a href="#" class="menu-footer__link">O нас</a>
@@ -197,11 +185,14 @@
                         </svg>
                     </a>
                 </div>
-
                 <span class="footer__copyright">Copyright &copy; 2022, All rights reserved.
                 </span>
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
+
 </html>
