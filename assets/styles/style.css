@@ -1712,25 +1712,20 @@ body {
 /* .news {
     margin-top: 90px;
 }
-
 .news__container {
     background-image: url(../img/numbered_services_bg.jpg);
     background-size: cover;
 }
-
 .news__title {
     color: #f9f9f9;
     text-align: center;
 }
-
 .news__subtitle {
     text-align: center;
 }
-
 .news__items {
     display: flex;
 }
-
 .page-news__item {
     flex: 0 1 auto;
 } */
@@ -1744,22 +1739,18 @@ body {
     text-align: center;
     padding: 0px 0px 30px 0px;
 }
-
 .item-news:hover {
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
     margin-top: -0px;
 }
-
 .item-news:not(:last-child) {
     margin: 0 30px 0 0;
 }
-
 .item-news__image {
     background-color: #a1a1a1;
     width: 100%;
     height: 250px;
 }
-
 .item-news__title {
     font-family: "Gabriela", serif;
     color: #162c5a;
@@ -1769,17 +1760,14 @@ body {
     text-align: center;
     padding-top: 20px;
 }
-
 .item-news__text {
     opacity: 0.9;
     padding: 20px;
 }
-
 .link {
     font-family: "Gabriela", serif;
     color: #162c5a;
 }
-
 .link:hover {
     color: #43cec6;
 } */
