@@ -1554,3 +1554,69 @@ body {
   }
 }
 /* =========================About us======================================= */
+.objective {
+  padding-top: 100px;
+}
+.objective-project {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* .objective-project p {
+  font-size: 18px;
+  line-height: 1.5;
+} */
+
+.project-image {
+  height: 600px;
+  width: 100%;
+  flex-basis: 40%;
+}
+
+.project-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.project-content {
+  margin: 0 50px;
+  flex-basis: 60%;
+}
+
+.title-small {
+  margin: 50px 0 15px;
+  font-family: "Gabriela", serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  color: #162c5a;
+}
+
+.subtitle-small {
+  margin-bottom: 40px;
+  font-family: "Gabriela", serif;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: normal;
+  color: #162c5a;
+}
+
+.subtitle-blue {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: #1db6ae;
+}
+
+.subtitle-contact {
+  margin-top: 80px;
+  font-weight: 800;
+  color: #162c5a;
+}
+
+.project-content li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
