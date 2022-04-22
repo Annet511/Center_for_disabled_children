@@ -67,6 +67,9 @@ function closeOnClick() {
 }
 
 // Плавный переход к якорю
+
+if(window.location.toString().indexOf('index.html')>0)
+{
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
     anchor.addEventListener("click", function(event) {
@@ -78,3 +81,5 @@ for (let anchor of anchors) {
         })
     })
 }
+}
+
