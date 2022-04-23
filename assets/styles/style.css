@@ -40,21 +40,12 @@ body {
 /* ================================================================= */
 
 body {
-<<<<<<< HEAD
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 137%;
   color: #848282;
-=======
-    font-family: "Nunito", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 137%;
-    color: #848282;
->>>>>>> main
 }
 
 .wrapper {
@@ -380,7 +371,6 @@ body {
 /* =========================bg=================================== */
 
 .bg {
-<<<<<<< HEAD
   min-width: 100%;
   height: 600px;
   position: relative;
@@ -404,31 +394,6 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1;
-=======
-    min-width: 100%;
-    height: 600px;
-    position: relative;
-    background-image: url(../img/family-background.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin: 0 auto;
-}
-
-.bg:before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.29);
-    background: linear-gradient(to right, #43cec7, 30%, #43cec700);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
->>>>>>> main
 }
 
 .bg__container {
@@ -606,7 +571,6 @@ body {
 }
 
 .directions__center {
-<<<<<<< HEAD
   position: absolute;
   bottom: 20%;
   width: 250px;
@@ -618,19 +582,6 @@ body {
   background-position: top;
   text-align: center;
   border-radius: 50%;
-=======
-    position: absolute;
-    bottom: 20%;
-    width: 250px;
-    height: 290px;
-    background-image: url(../img/directions/girl.jpg);
-    background-repeat: no-repeat;
-    background-size: 250px, 290px;
-    background-size: contain;
-    background-position: top;
-    text-align: center;
-    border-radius: 50%;
->>>>>>> main
 }
 
 .directions_wrapper {
@@ -773,7 +724,6 @@ body {
         line-height: 10px;
     }
 
-<<<<<<< HEAD
   .cards_wrapper {
     left: calc(50% - 60px);
     top: 30px;
@@ -785,16 +735,13 @@ body {
   .directions__center {
     bottom: 25%;
   }
-=======
     .directions__center {
         bottom: 25%;
     }
->>>>>>> main
 }
 
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
-<<<<<<< HEAD
   .card_img {
     width: 40px;
     height: 40px;
@@ -832,54 +779,10 @@ body {
   .directions_wrapper {
     height: 400px;
   }
-=======
-    .card_img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .directions__center {
-        bottom: 40%;
-        width: 135px;
-        height: 143px;
-        background-size: 150px, 190px;
-    }
-
-    .card {
-        height: 50px;
-        width: 50px;
-        transform-origin: 50% 10px;
-    }
-
-    .cards_wrapper {
-        left: calc(50% - 27px);
-        top: 20px;
-        height: 25%;
-        transform-origin: 50% 140%;
-        font-size: 9px;
-        line-height: 10px;
-    }
-
-    .directions__text {
-        font-size: 9px;
-        position: relative;
-        top: 135px;
-        line-height: 12px;
-    }
-
-    .directions_wrapper {
-        height: 400px;
-    }
->>>>>>> main
 }
 
 /* =========================News======================================= */
 .news {
-<<<<<<< HEAD
-  background-image: url(../img/numbered_services_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-=======
     background-image: url(../img/numbered_services_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -890,7 +793,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
->>>>>>> main
 }
 
 .news__container {
@@ -937,7 +839,6 @@ body {
 }
 
 .item-news__image {
-<<<<<<< HEAD
   cursor: pointer;
   position: relative;
 }
@@ -997,72 +898,10 @@ body {
 
 .news__button {
   margin-top: 60px;
-=======
-    cursor: pointer;
-    position: relative;
-}
-
-.item-news__image:before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    /* background-color: rgba(22, 44, 90, 0.3); */
-    /* background-color: rgba(22, 44, 90, 0.2); */
-    /* background-color: rgba(67, 206, 198, 0.4); */
-    background-color: rgba(136, 129, 129, 0.4);
-    /* background-color: rgba(0, 0, 0, 0.50); */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    transition: all .3s;
-}
-
-.item-news__image:hover:before {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.item-news__image img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.item-news__title {
-    display: flex;
-    flex: 1 1 auto;
-    font-family: "Gabriela", serif;
-    color: #162c5a;
-    line-height: 117%;
-    text-align: center;
-    padding: 20px 30px 0;
-}
-
-.item-news__text {
-    padding: 20px;
-    letter-spacing: 1px;
-    /* color: rgba(235, 144, 17, 0.841); */
-    /* color: #d69845; */
-    /* font-weight: 800; */
-}
-
-.item-news__title:hover {
-    color: #43cec6;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.news__button {
-    margin-top: 60px;
->>>>>>> main
 }
 
 /* PC */
 @media (max-width: 1087px) {
-<<<<<<< HEAD
   .item-news__image img {
     height: 220px;
   }
@@ -1070,21 +909,10 @@ body {
   .item-news__title {
     padding: 20px 20px 0;
   }
-=======
-    .item-news__image img {
-        height: 220px;
-    }
-
-    .item-news__title {
-        padding: 20px 20px 0;
-    }
-
->>>>>>> main
 }
 
 /* TABLET */
 @media (max-width: 991.98px) {
-<<<<<<< HEAD
   .news__item {
     flex: 0 1 50%;
   }
@@ -1136,33 +964,6 @@ body {
 
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
-=======
-
-    .news__item {
-        flex: 0 1 50%;
-    }
-
-    .item-news__image img {
-        height: 250px;
-    }
-
-    .item-news:last-child {
-        display: none;
-    }
-
-    .item-news:not(:last-child) {
-        margin: 0;
-    }
-
-    .item-news:first-child {
-        margin: 0 20px 0 0;
-    }
-
-    .news__button {
-        margin-top: 50px;
-    }
-
->>>>>>> main
 }
 
 /* MOBILE */
