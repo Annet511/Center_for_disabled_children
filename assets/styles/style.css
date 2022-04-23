@@ -37,6 +37,7 @@ body {
     line-height: 1;
 }
 
+
 /* ================================================================= */
 
 body {
@@ -106,7 +107,9 @@ body {
     transition: 0.3s;
 }
 
+
 /* PC */
+
 @media (max-width: 1087px) {
     [class*="__container"] {
         max-width: 970px;
@@ -134,6 +137,7 @@ body {
         font-size: 28px;
     }
 }
+
 
 /* MOBILE */
 @media (max-width: 767.98px) {
@@ -167,6 +171,7 @@ body {
         padding: 14px 20px 13px;
     }
 }
+
 
 /* ============================Header========================================= */
 
@@ -243,6 +248,7 @@ body {
     background-color: #43cec6;
 }
 
+
 /* TABLET */
 
 @media (max-width: 991.98px) {
@@ -256,7 +262,6 @@ body {
         margin-right: 20px;
         margin-left: 30px;
     }
-
     .hamb {
         display: flex;
         align-items: center;
@@ -274,7 +279,6 @@ body {
         background-color: #162c5a;
         transition: 0.2s;
     }
-
     .popup {
         position: fixed;
         top: 150px;
@@ -302,20 +306,17 @@ body {
         display: flex;
         transition: 0.3s;
     }
-
     .popup .menu__list {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-
     .popup .menu__item {
         width: 100%;
         display: flex;
         justify-content: center;
         padding: 20px 0;
     }
-
     .popup .menu__link {
         font-size: 18px;
         font-weight: 500;
@@ -343,13 +344,13 @@ body {
     }
 }
 
+
 /* MOBILE */
 
 @media (max-width: 767.98px) {
     .navbar__wrap {
         min-height: 120px;
     }
-
     .header__logo {
         width: 60px;
         height: 60px;
@@ -364,9 +365,11 @@ body {
     }
 }
 
+
 /* MOBILE SMALL */
 
 @media (max-width: 479.98px) {}
+
 
 /* =========================bg=================================== */
 
@@ -550,6 +553,7 @@ body {
     }
 }
 
+
 /* =========================DIRECTIONS=================================== */
 
 .directions__container {
@@ -722,26 +726,24 @@ body {
     }
 }
 
+
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
     .card_img {
         width: 40px;
         height: 40px;
     }
-
     .directions__center {
         bottom: 40%;
         width: 135px;
         height: 143px;
         background-size: 150px, 190px;
     }
-
     .card {
         height: 50px;
         width: 50px;
         transform-origin: 50% 10px;
     }
-
     .cards_wrapper {
         left: calc(50% - 27px);
         top: 20px;
@@ -750,18 +752,17 @@ body {
         font-size: 9px;
         line-height: 10px;
     }
-
     .directions__text {
         font-size: 9px;
         position: relative;
         top: 135px;
         line-height: 12px;
     }
-
     .directions_wrapper {
         height: 400px;
     }
 }
+
 
 /* =========================News======================================= */
 .news {
@@ -940,6 +941,7 @@ body {
 @media (max-width: 479.98px) {}
 
 /* =========================Team======================================= */
+
 .team__title {
     text-align: center;
     margin-bottom: 60px;
@@ -1050,6 +1052,7 @@ body {
     }
 }
 
+
 /* =========================projects======================================= */
 
 .projects__items {
@@ -1112,6 +1115,7 @@ body {
     }
 }
 
+
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
     .projects__items {
@@ -1126,6 +1130,7 @@ body {
         padding-bottom: 0px;
     }
 }
+
 
 /* =========================Video======================================= */
 
@@ -1221,14 +1226,18 @@ body {
     border-radius: 10px;
 }
 
+
 /* MOBILE SMALL */
+
 @media (max-width: 479.98px) {
     .video__title {
         margin-bottom: 40px;
     }
 }
 
+
 /* =========================Certificates=================================== */
+
 .certificates__container {
     text-align: center;
 }
@@ -1267,23 +1276,25 @@ body {
     display: none;
 }
 
+
 /* TABLET */
+
 @media (max-width: 991.98px) {
     .certificates_body {
         padding: 20px 0 0;
     }
-
     .certificate-item {
         height: 160px;
         flex-basis: 30%;
     }
-
     .certificate-item:nth-child(4) {
         display: none;
     }
 }
 
+
 /* MOBILE */
+
 @media (max-width: 767.98px) {
     .certificate-item {
         height: 150px;
@@ -1303,13 +1314,11 @@ body {
         height: 150px;
         flex-basis: 30%;
     }
-
     .certificate-item:nth-child(1),
     .certificate-item:nth-child(2),
     .certificate-item:nth-child(3) {
         display: none;
     }
-
     .certificate-item:nth-child(6),
     .certificate-item:nth-child(7),
     .certificate-item:nth-child(8) {
@@ -1321,13 +1330,14 @@ body {
     .certificate-item {
         flex-basis: 45%;
     }
-
     .certificate-item:nth-child(6) {
         display: none;
     }
 }
 
+
 /* =========================Certificates=================================== */
+
 
 /* =========================Contacts======================================= */
 
@@ -1405,15 +1415,18 @@ body {
     }
 }
 
+
 /* MOBILE */
 @media (max-width: 767.98px) {}
 
 /* MOBILE SMALL */
+
 @media (max-width: 479.98px) {
     .contacts__maps {
         flex: 1 1 300px;
     }
 }
+
 
 /* =========================Footer======================================= */
 
@@ -1494,7 +1507,6 @@ body {
     fill: #162c5a;
 }
 
-
 .social__item:not(:last-child) {
     margin: 0 30px 0 0;
 }
@@ -1513,6 +1525,7 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 /* TABLET */
 @media (max-width: 991.98px) {}
@@ -1545,6 +1558,7 @@ body {
     }
 }
 
+
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
     .menu-footer__list {
@@ -1557,7 +1571,6 @@ body {
 }
 
 #news__link {
-
     display: block;
     position: relative;
     top: -140px;
@@ -1565,7 +1578,6 @@ body {
 }
 
 #contacts__link {
-
     display: block;
     position: relative;
     top: -140px;
@@ -1573,6 +1585,7 @@ body {
 }
 
 /* ========================= Page About us======================================= */
+
 .about-us__container {
     padding-top: 150px;
 }
@@ -1616,30 +1629,34 @@ body {
     display: none;
 }
 
+
 /* PC */
+
 @media (max-width: 1087px) {
     .about-item {
         height: 160px;
     }
-
     .about-item:nth-child(9) {
         display: none;
     }
 }
 
+
 /* TABLET */
+
 @media (max-width: 991.98px) {
     .about-item {
         flex-basis: 30%;
     }
-
     .about-item:nth-child(7),
     .about-item:nth-child(8) {
         display: none;
     }
 }
 
+
 /* MOBILE */
+
 @media (max-width: 767.98px) {
     .about-us__container {
         padding-top: 120px;
@@ -1653,12 +1670,10 @@ body {
         text-align: center;
         gap: 15px;
     }
-
     .about-item {
         height: 220px;
         flex-basis: 30%;
     }
-
     .about-item:nth-child(1),
     .about-item:nth-child(2),
     .about-item:nth-child(3),
@@ -1667,7 +1682,6 @@ body {
     .about-item:nth-child(6) {
         display: none;
     }
-
     .about-item:nth-child(9),
     .about-item:nth-child(12),
     .about-item:nth-child(14) {
@@ -1675,29 +1689,86 @@ body {
     }
 }
 
+
 /* MOBILE SMALL */
+
 @media (max-width: 479.98px) {
     .about-body {
         gap: 30px;
     }
-
     .about-item {
         height: 200px;
         flex-basis: 100%;
     }
-
     .about-item:nth-child(9),
     .about-item:nth-child(12),
     .about-item:nth-child(14) {
         display: none;
     }
-
     .about-item:nth-child(3),
     .about-item:nth-child(4) {
         display: block;
     }
 }
 
+
+/* =========================About us======================================= */
+
+.aboutus1-container {
+    padding-top: 150px;
+    max-width: 1176px;
+    margin: 0px auto;
+}
+
+.aboutus1_idea {
+    padding-top: 60px;
+    float: left;
+}
+
+.aboutus1_solution {
+    padding-top: 60px;
+}
+
+.aboutus1_result {
+    padding-top: 60px;
+}
+
+.idea_li {
+    list-style-type: circle;
+    flex: 1 1 200px;
+}
+
+.result_li {
+    list-style-type: circle;
+}
+
+.aboutus1-item1 img {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+    margin: 0 0 1em 1em;
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.aboutus1-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.aboutus1-item img:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.02);
+}
+
+.aboutus1-item1 img:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.02);
+}
+
+.aboutus1__button {
+    text-align: center;
+}
 /* =========================About us======================================= */
 
 /* ========================= Page News======================================= */
