@@ -580,6 +580,10 @@ body {
     padding: 0 0 20px;
 }
 
+.about-us__content p:nth-child(3) {
+    padding: 0 0 0px;
+}
+
 .aboutus1_solution {
     padding-top: 60px;
 }
@@ -660,7 +664,7 @@ body {
 
 .directions__center {
     position: absolute;
-    bottom: 20%;
+    bottom: 22%;
     width: 250px;
     height: 290px;
     background-image: url(../img/directions/girl.jpg);
@@ -689,6 +693,7 @@ body {
 
 .cards_wrapper {
     position: absolute;
+    top: -10px;
     left: calc(50% - 75px);
     height: 50%;
     transform-origin: 50% 85%;
@@ -805,15 +810,19 @@ body {
     }
 
     .cards_wrapper {
-        left: calc(50% - 60px);
-        top: 30px;
-        height: 25%;
-        transform-origin: 50% 143%;
+        left: calc(50% - 50px);
+        top: -10px;
+        height: 23%;
+        transform-origin: 50% 185%;
         line-height: 10px;
     }
 
     .directions__center {
-        bottom: 25%;
+        bottom: 18%;
+    }
+
+    .directions_wrapper {
+        height: 470px;
     }
 }
 
@@ -826,7 +835,7 @@ body {
     }
 
     .directions__center {
-        bottom: 40%;
+        bottom: 34%;
         width: 135px;
         height: 143px;
         background-size: 150px, 190px;
@@ -840,9 +849,9 @@ body {
 
     .cards_wrapper {
         left: calc(50% - 27px);
-        top: 20px;
-        height: 25%;
-        transform-origin: 50% 140%;
+        top: 5px;
+        height: 24%;
+        transform-origin: 50% 178%;
         font-size: 9px;
         line-height: 10px;
     }
@@ -855,7 +864,7 @@ body {
     }
 
     .directions_wrapper {
-        height: 400px;
+        height: 330px;
     }
 }
 
@@ -1035,6 +1044,12 @@ body {
 }
 
 .item-team {
+    text-align: center;
+}
+
+.item-team:nth-child(1),
+.item-team:nth-child(2),
+.item-team:nth-child(3) {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -1220,6 +1235,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .project__image_active {
+        width: 90%;
+    }
+
     .item-project__title.subtitle {
         margin-bottom: 15px;
     }
@@ -1235,6 +1254,10 @@ body {
 
     .item-project__text {
         padding: 0 0 20px;
+    }
+
+    .project__image_active {
+        width: 80%;
     }
 }
 
