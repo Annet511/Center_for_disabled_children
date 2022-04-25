@@ -1063,12 +1063,13 @@ body {
 .project__item {
     display: flex;
     flex-direction: column;
-    flex: 0 1 33.3%;
+    flex: 0 1 33.333%;
     align-items: center;
 }
 
 .item-project {
     text-align: center;
+    /* text-align: justify; */
 }
 
 .item-project__square {
@@ -1084,6 +1085,7 @@ body {
 
 .item-project span {
     color: #162c5a;
+    font-weight: bold;
 }
 
 .project__image {
@@ -1097,46 +1099,27 @@ body {
     margin-bottom: 20px;
 }
 
-.item-project__description {
-    display: flex;
-    flex-direction: column;
-}
-
 .item-project__text {
     flex: 1 1 auto;
-    padding: 0 30px 20px 30px;
+    padding: 0px 30px 20px 30px;
 }
 
 .item-project__text-bottom {
-    flex: 0 0 20px;
+    flex: 0 0 auto;
     padding: 0 30px 0 30px;
     color: #162c5a;
-}
-
-/* TABLET */
-@media (max-width: 991.98px) {
-    .item-project__text {
-        padding: 0;
-    }
-
-    .item-project__text {
-        padding: 0 35px 0 35px
-    }
+    font-weight: bold;
 }
 
 
 /* MOBILE */
 @media (max-width: 767.98px) {
     .projects__items {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
     .project__item {
         flex: 0 1 50%;
-        position: relative;
-        padding-bottom: 0px;
     }
 
     .project__item:not(:last-child) {
@@ -1153,46 +1136,19 @@ body {
 
     .item-project__title.subtitle {
         margin-bottom: 15px;
-    }
-
-    .item-project__text {
-        padding: 0 30px 0 30px
     }
 }
 
 
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
-    .projects__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
     .project__item {
         flex: 0 1 100%;
-        position: relative;
-        padding-bottom: 0px;
-    }
-
-    .project__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    .item-project__square {
-        margin-bottom: 15px;
-    }
-
-    .project__image {
-        margin-bottom: 20px;
-    }
-
-    .item-project__title.subtitle {
-        margin-bottom: 15px;
     }
 
     .item-project__text {
-        padding: 0 30px 0 30px
+        padding: 0 0 20px;
     }
 }
 
