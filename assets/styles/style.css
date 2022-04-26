@@ -62,7 +62,7 @@ body {
 [class*="__container"] {
     max-width: 1176px;
     margin: 0px auto;
-    padding: 70px 15px;
+    padding: 50px 15px;
 }
 
 .title {
@@ -107,7 +107,6 @@ body {
 }
 
 /* PC */
-
 @media (max-width: 1087px) {
     [class*="__container"] {
         max-width: 970px;
@@ -118,7 +117,6 @@ body {
 @media (max-width: 991.98px) {
     [class*="__container"] {
         max-width: 750px;
-        padding: 60px 15px;
     }
 
     body {
@@ -1054,21 +1052,17 @@ body {
 
 .team__image:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.7s;
 }
 
 .item-team__title {
     display: flex;
-    flex: 0 0 120px;
+    flex: 0 0 110px;
     justify-content: center;
     align-items: center;
-    font-family: "Gabriela", serif;
-    color: #162c5a;
-    font-size: 30px;
     line-height: 1;
-    letter-spacing: 1px;
-    padding-top: 20px;
+    margin-bottom: 0;
 }
 
 .item-team__title:hover {
@@ -1078,7 +1072,7 @@ body {
 
 .item-team__text {
     opacity: 0.9;
-    padding: 10px 20px 10px 20px;
+    padding: 0 20px 10px 20px;
 }
 
 /* MOBILE */
@@ -1095,6 +1089,10 @@ body {
 
     .item-team__title {
         flex: 0 0 110px;
+    }
+
+    .item-team:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
 
@@ -1653,6 +1651,10 @@ body {
     margin-top: 90px;
 }
 
+.objective__container {
+    padding: 50px 15px 20px;
+}
+
 .objective-project {
     display: flex;
 }
@@ -1725,6 +1727,11 @@ body {
 /* TABLET */
 @media (max-width: 991.98px) {
 
+    .objective__container {
+        padding: 50px 15px 10px;
+    }
+
+
     .project-image {
         flex: 0 0 40%;
     }
@@ -1750,6 +1757,10 @@ body {
 @media (max-width: 767.98px) {
     .objective {
         margin-top: 75px;
+    }
+
+    .objective__container {
+        padding: 40px 15px 10px;
     }
 
     .objective-project {
@@ -1787,6 +1798,11 @@ body {
 
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
+
+    .objective__container {
+        padding: 30px 15px 0px;
+    }
+
     .objective-project {
         flex-wrap: wrap;
         justify-content: center;
@@ -1862,13 +1878,18 @@ body {
 
 .relevance__list li {
     list-style-image: url(../img/author/square.jpg);
-    margin: 0 0 15px 20px;
+    margin: 0 0 0 20px;
     padding-left: 5px;
     text-align: justify;
 }
 
+.relevance__list li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
 /* TABLET */
 @media (max-width: 991.98px) {
+
     .relevance__subtitle {
         text-align: center;
     }
@@ -1908,6 +1929,10 @@ body {
 }
 
 /* ========================= Page About-us Photo======================================= */
+
+.about__container {
+    padding-top: 40px;
+}
 
 .about-body {
     display: flex;
@@ -1960,6 +1985,12 @@ body {
 
 /* TABLET */
 @media (max-width: 991.98px) {
+
+    .about__container {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
     .about-item {
         flex-basis: 30%;
     }
