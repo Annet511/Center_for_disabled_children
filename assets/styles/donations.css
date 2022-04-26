@@ -1,6 +1,7 @@
 .donations {
   padding-top: 150px;
 }
+
 .donations__descr {
   display: flex;
   align-items: center;
@@ -8,57 +9,60 @@
 
 }
 
- .help__container {
-   /*  margin-top: 70px ; */
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}  
+.help__container {
+  /*  margin-top: 70px ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .help__map {
   max-width: 100%;
   margin-top: 40px;
 }
 
-.help__requisites  {
+.help__requisites {
   background-image: url(../img/sber_logo.svg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 30px;}
+  margin-bottom: 30px;
+}
 
 
-  .help__options {
-    width: 100%;
-  }
+.help__options {
+  width: 100%;
+}
 
-  .help__form {
-    max-width: 100%;
-  }
-
-
-
+.help__form {
+  max-width: 100%;
+}
 
 @media (max-width: 991.98px) {
   .donations__descr {
     flex-direction: column;
   }
 }
+
 .donations__img img {
   width: 100%;
 }
+
 .donations__text {
   max-width: 48%;
   margin-left: 36px;
 }
+
 .donations__text p:not(:last-child) {
   margin-bottom: 12px;
 }
+
 .donations__text p.bold {
   font-weight: 700;
   text-decoration: underline;
   color: rgb(123, 122, 122);
   font-size: 120%;
 }
+
 @media (max-width: 991.98px) {
   .donations__text {
     max-width: 100%;
@@ -73,100 +77,119 @@
   max-width: 70%;
   margin: 0 auto 24px;
 }
+
 @media (max-width: 991.98px) {
   .help__desc {
     max-width: 100%;
     font-size: 20px;
   }
 }
+
 .help__options {
   display: flex;
   flex-wrap: wrap;
 }
+
 @media (max-width: 991.98px) {
   .help__options {
     flex-direction: column;
   }
 }
+
 .help__forms {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 991.98px) {
   .help__forms {
     flex-direction: column;
     justify-content: flex-start;
   }
 }
- .help__form {
+
+.help__form {
   width: 48%;
-} 
+}
+
 @media (max-width: 991.98px) {
   .help__form {
     width: 100%;
   }
 }
+
 .help__requisites ul li {
   margin-bottom: 12px;
   display: flex;
 }
+
 .help__requisites ul li p {
   width: 50%;
   white-space: nowrap;
   font-size: 16px;
 }
+
 @media (max-width: 1087px) {
   .help__requisites ul li p {
     white-space: inherit;
     width: 100%;
   }
 }
+
 @media (max-width: 1087px) {
   .help__requisites ul li {
     flex-direction: column;
   }
 }
+
 .help__requisites-title {
   font-weight: 700;
   color: black;
 }
+
 .help__option-title {
   font-size: 20px;
   /* color: black; */
   margin: 12px 0;
 }
+
 .help__option-qr {
   max-width: 50%;
   width: 100%;
   height: auto;
 }
+
 .help__option-qr img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
 @media (max-width: 991.98px) {
   .help__option-qr img {
     -o-object-position: left;
-       object-position: left;
+    object-position: left;
   }
-  
+
 }
+
 @media (max-width: 991.98px) {
   .help__option-qr {
     height: 350px;
     max-width: inherit;
   }
 
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
 
 
 .help__head {
   max-width: 100%;
   height: 600px;
   background-image: url(../img/Charity4.png);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -178,7 +201,7 @@
   align-self: center;
   padding-left: 25%;
 }
- 
+
 .footer__icon {
   width: 60%;
   position: relative;
