@@ -62,7 +62,7 @@ body {
 [class*="__container"] {
     max-width: 1176px;
     margin: 0px auto;
-    padding: 70px 15px;
+    padding: 50px 15px;
 }
 
 .title {
@@ -119,7 +119,6 @@ body {
 @media (max-width: 991.98px) {
     [class*="__container"] {
         max-width: 750px;
-        padding: 60px 15px;
     }
 
     body {
